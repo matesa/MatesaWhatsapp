@@ -1,0 +1,98 @@
+{
+    "name": "Bottus",
+    "description": " MatesaWhatsapp.",
+    "keywords": [
+        "whatsapp",
+        "bot"
+    ],
+    "stack": "container",
+    "env": {
+        "MATESA_SESSION": {
+            "description": "whatsapp web session girin.",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Sudo modu, Numaranız uluslararası bir numara olmalıdır. Bu yüzden ülke kodundan sonra numaranız olmalıdır. Örnek: 90537xxxxxxx (TR)",
+            "required": false
+        },
+        "HANDLERS": {
+            "description": "enter prefix. Example . or ^[.,!/] for using multiple prefix like .,!/ or LyFE. Using keyword like LyFE will broke list and help command",
+            "required": true,
+            "value": "."
+        },
+        "SEND_READ": {
+            "description": "okundu bilgisi gönder.",
+            "required": false,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "Heroku özelliklerini etkinleştir",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Key girin.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name girin.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "debug",
+            "required": false,
+            "value": "false"
+        },
+        "CLR_SESSION": {
+            "description": "Eski oturumu silmek için true değerini girin.",
+            "required": false,
+            "value": "false"
+        },
+        "NO_ONLINE": {
+            "description": "çevrimiçi gizlemek için true olarak ayarlayın.",
+            "required": false,
+            "value": "true"
+        },
+        "WARN_COUNT": {
+            "description": "Maksimum uyarı sayısı",
+            "required": false,
+            "value": "3"
+        },
+        "WARN_MSG": {
+            "description": "banlarken mesaj gönder.",
+            "required": false,
+            "value": "Ban yedin"
+        },
+        "REMOVEBG_KEY": {
+            "description": "remove.bg'den key",
+            "required": false,
+            "value": "null"
+        },
+        "LANGUAGE": {
+            "description": "Bot dilini girin, örneğin İngilizce için EN, Bahasa Indonesia için ID, Türkçe için TR",
+            "value": "TR"
+        },
+        "STICKER_PACKNAME": {
+            "description": "Sticker paket adı girin",
+            "value": "Matesa poyraz"
+        },
+        "DISABLE_BOT": {
+            "description": "Disable or Block bot in group/chat.Enter required chat jid separated by ,",
+            "value": "null"
+        },
+        "FIND_API_KEY": {
+            "description": "key alın https://dashboard.audd.io/",
+            "value": "null"
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku-community/apt"
+        }
+    ]
+}
