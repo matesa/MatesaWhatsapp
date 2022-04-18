@@ -1,6 +1,6 @@
 <img src="https://i.hizliresim.com/2ajrlek.png" align="right" width="200" height="200"/>
 
-# Matesa Whatsapp <img src="https://img.shields.io/github/v/release/matesa/MatesaWhatsapp?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
+# MatesaWhatsapp <img src="https://img.shields.io/github/v/release/matesa/MatesaWhatsapp?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
 
 
