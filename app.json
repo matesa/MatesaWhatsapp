@@ -5,7 +5,8 @@
         "whatsapp",
         "bot"
     ],
-    "stack": "container",
+   "repository": "https://github.com/matesa/MatesaWhatsapp", 
+ "stack": "container",
     "env": {
         "MATESA_SESSION": {
             "description": "whatsapp web session girin.",
